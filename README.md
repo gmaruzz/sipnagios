@@ -108,3 +108,9 @@ CFLAGS="$CFLAGS -fPIC -DPJ_LOG_MAX_LEVEL=3" make
 
 # TODO
 Let's use pjproject media interface for streaming an audio file and recording into a file, so we'll reuse all RTCP pjsip's goodies
+
+# CREDITS
+mos calculation is scraped from Julien Chavanton work (VoIP Patrol, on GitHub too) I can't even understand :) (merci Julien!)
+https://github.com/jchavanton/voip_patrol/
+
+pjproject: https://github.com/pjsip/pjproject
