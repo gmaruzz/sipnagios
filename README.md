@@ -1,5 +1,5 @@
 # sipnagios
-Nagios Plugin to check Call Quality in SIP VoIP (compatible with checkmk, etc)
+Nagios Plugin to check Call Quality in SIP VoIP (compatible with check_mk, Zabbix, etc)
 
 sipnagios implements the Nagios plugin API for monitoring and performance data.
 
@@ -10,6 +10,8 @@ It makes a call, checks all the various resulting values (mos, rtt, pdd, tta, ji
 If the call has gone well, sipnagios print performance data for Nagios graphs, and returns 0.
 
 If the call fails, or if its measured values are not inside acceptable ranges, it exits with Nagios conventional WARNING or CRITICAL values.
+
+Zabbix seems not able to gather historical performances data from external checks, but will show last call values in GUI
 
 # USAGE:
 <pre>
