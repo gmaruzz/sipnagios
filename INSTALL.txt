@@ -1,0 +1,17 @@
+apt install python-dev gcc make gcc binutils build-essential git wget unzip uuid-dev
+
+cd /usr/src
+git clone https://github.com/gmaruzz/sipnagios.git
+
+wget https://github.com/pjsip/pjproject/archive/refs/tags/2.11.zip
+unzip 2.11.zip
+cd pjproject-2.11/
+./configure
+CFLAGS="$CFLAGS -fPIC -DPJ_LOG_MAX_LEVEL=3" make dep
+
+cp ../sipnagios/sipnagios.c pjsip-apps/src/samples/
+cp ../sipnagios/Samples.mak pjsip-apps/build/
+
+CFLAGS="$CFLAGS -fPIC -DPJ_LOG_MAX_LEVEL=3" make 
+./pjsip-apps/bin/samples/x86_64-unknown-linux-gnu/sipnagios --help
+
