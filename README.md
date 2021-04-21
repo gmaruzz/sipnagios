@@ -105,3 +105,6 @@ cp ../sipnagios/Samples.mak pjsip-apps/build/
 CFLAGS="$CFLAGS -fPIC -DPJ_LOG_MAX_LEVEL=3" make 
 ./pjsip-apps/bin/samples/x86_64-unknown-linux-gnu/sipnagios --help
 </pre>
+
+# TODO
+Let's use pjproject media interface for streaming an audio file and recording into a file, so we'll reuse all RTCP pjsip's goodies
