@@ -106,6 +106,14 @@ CFLAGS="$CFLAGS -fPIC -DPJ_LOG_MAX_LEVEL=3" make
 ./pjsip-apps/bin/samples/x86_64-unknown-linux-gnu/sipnagios --help
 </pre>
 
+# Install in CheckMk
+<pre>
+cp sipnagios /omd/sites/YOURSITENAME/local/lib/nagios/plugins/
+chmod +x /omd/sites/check_mk/local/lib/nagios/plugins/sipnagios
+</pre>
+
+WATO -> Host & Service Parameters -> Active Checks (HTTP, TCP, etc)
+
 # TODO
 Let's use pjproject media interface for streaming an audio file and recording into a file, so we'll reuse all RTCP pjsip's goodies
 
