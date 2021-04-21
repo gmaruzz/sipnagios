@@ -109,7 +109,7 @@ CFLAGS="$CFLAGS -fPIC -DPJ_LOG_MAX_LEVEL=3" make
 # Install in CheckMk
 <pre>
 cp sipnagios /omd/sites/YOURSITENAME/local/lib/nagios/plugins/
-chmod +x /omd/sites/check_mk/local/lib/nagios/plugins/sipnagios
+chmod +x /omd/sites/YOURSITENAME/local/lib/nagios/plugins/sipnagios
 </pre>
 
 WATO -> Host & Service Parameters -> Active Checks (HTTP, TCP, etc)
