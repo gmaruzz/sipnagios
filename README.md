@@ -115,7 +115,7 @@ chmod +x /omd/sites/YOURSITENAME/local/lib/nagios/plugins/sipnagios
 WATO -> Host & Service Parameters -> Active Checks (HTTP, TCP, etc)
 
 # TODO
-- Add Zabbix compatibility
+- Enhance Zabbix compatibility (if possible/needed)
 - Let's use pjproject media interface for streaming an audio file and recording into a file, so we'll reuse all RTCP pjsip's goodies
 
 # CREDITS
