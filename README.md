@@ -115,7 +115,8 @@ chmod +x /omd/sites/YOURSITENAME/local/lib/nagios/plugins/sipnagios
 WATO -> Host & Service Parameters -> Active Checks (HTTP, TCP, etc)
 
 # TODO
-Let's use pjproject media interface for streaming an audio file and recording into a file, so we'll reuse all RTCP pjsip's goodies
+- Add Zabbix compatibility
+- Let's use pjproject media interface for streaming an audio file and recording into a file, so we'll reuse all RTCP pjsip's goodies
 
 # CREDITS
 mos calculation is scraped from Julien Chavanton work (VoIP Patrol, on GitHub too) I can't even understand :) (merci Julien!)
